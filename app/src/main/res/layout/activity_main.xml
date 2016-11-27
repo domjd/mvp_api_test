@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".ui.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Large Text"
+            android:id="@+id/movieTitleTxt"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/posterImg"
+            android:paddingStart="10dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/posterImg"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:minHeight="300dp"
+            android:minWidth="200dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:id="@+id/releaseDateTxt"
+            android:layout_below="@+id/movieTitleTxt"
+            android:layout_alignStart="@+id/movieTitleTxt"
+            android:paddingStart="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A mild-mannered chemist and an ex-con must lead the counterstrike when a rogue group of military men, led by a renegade general, threaten a nerve gas attack from Alcatraz against San Francisco."
+            android:id="@+id/plotTxt"
+            android:paddingTop="10dp"
+            android:layout_below="@+id/posterImg"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="IMDBb Rating"
+            android:id="@+id/imdbLabel"
+            android:paddingTop="10dp"
+            android:layout_below="@+id/plotTxt"
+            android:layout_centerHorizontal="true" />
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imdbRating"
+            style="?android:attr/ratingBarStyleIndicator"
+            android:numStars="10"
+            android:rating="2.4"
+            android:stepSize="0.1"
+           android:layout_below="@id/imdbLabel"
+            android:layout_alignParentStart="true"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="MetaScore"
+            android:id="@+id/metaLabel"
+            android:paddingTop="10dp"
+            android:layout_below="@+id/imdbRating"
+            android:layout_centerHorizontal="true" />
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/metaRating"
+            style="?android:attr/ratingBarStyleIndicator"
+            android:numStars="10"
+            android:rating="2.4"
+            android:stepSize="0.1"
+            android:layout_below="@id/metaLabel"
+            android:layout_alignParentStart="true"
+            android:layout_centerHorizontal="true"/>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
